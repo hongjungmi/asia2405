@@ -6,14 +6,16 @@ import matplotlib as mlp
 import matplotlib.pyplot as plt
 import seaborn as sns
 # %%
-
+#라이브러리 안에 기본 탑재된 데이터 불러옴 ~
 from sklearn.datasets import load_breast_cancer 
 # %%
 # 인공지능 라이브러리 안에 있는 데이터는 별거아님 ~
 breast = load_breast_cancer ()
+breast
 # %%
 df=pd.DataFrame(breast['data'],columns=breast['feature_names'])
 df
+#%%
 breast['target']
 # %%
 #지도 학습은 분류와 회귀로 나뉜다.(꽃 분류)
